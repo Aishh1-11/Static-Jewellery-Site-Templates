@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My orders</title>
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- bs js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <!-- font awsome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- navbar starts -->
+    <nav class="navbar navbar-expand-lg light-blue sticky-top">
+        <div class="container-fluid ">
+            <a class="navbar-brand gold-txt display-2 fw-bold" href="#">Zyra</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sign-in.html">Sign-In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sign-up.html">Sign-up</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Our-Products
+                        </a>
+                        <ul class="dropdown-menu light-blue">
+                            <li><a class="dropdown-item" href="product-details.html">Pendants</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="product-details.html">Rings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="product-details.html">Earrings</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="product-details.html">Necklaces</a></li>
+    
+    
+    
+    
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="my-orders.html">My Orders</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart-summary.html">Cart <i class="fa-solid fa-cart-shopping"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="otp-verification.html">Verify OTP </i></a>
+                    </li>
+    
+    
+    
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Products" aria-label="Search" />
+                    <button class="btn btn-clr" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- navbar ends -->
+
+    <!-- orders card start -->
+    <div class="container my-5 h-100">
+        <h3 class="mb-4 text-white text-info fw-bold border-bottom">My Orders <i class="fa-solid fa-truck"></i></h3>
+
+        <!-- first Order starts -->
+        <div class="card mb-4  rounded">
+            <div class="card-body semi-transparent rounded">
+                <!-- Order Header -->
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div>
+                        <h5 class="mb-1">Order #12345</h5>
+                        <span>Placed on: 12 Aug 2025</span>
+                    </div>
+                    <span class="badge gold-background px-3 py-2">Shipped</span>
+                </div>
+
+                <!-- Order Items -->
+                <div class="row g-3 align-items-center border-top pt-3">
+
+                    <!-- Product Image -->
+                    <div class="col-md-2 col-4">
+                        <img src="./images/prdct_list_img2.webp" class=" myorderimg rounded " alt="...">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-md-6 col-8">
+                        <h6 class="mb-1">Product name</h6>
+                        <span>Material: Alloy| Qty: 1</span>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="col-md-2 text-md-end col-6">
+                        <p class="fw-bold mb-0">₹2,999</p>
+                    </div>
+
+
+                    <div class="col-md-2 text-md-end col-6">
+                        <button class="btn btn-sm btn-prdct">View Details</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <!-- first order start -->
+        <!-- second order -->
+
+        <div class="card mb-4  rounded">
+            <div class="card-body semi-transparent rounded h-100">
+                <!-- Order Header -->
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div>
+                        <h5 class="mb-1">Order #12345</h5>
+                        <span>Placed on: 12 Aug 2025</span>
+                    </div>
+                    <span class="badge bg-success px-3 py-2">Delivered</span>
+                </div>
+
+                <!-- Order Items -->
+                <div class="row g-3 align-items-center border-top pt-3 h-100">
+
+                    <!-- Product Image -->
+                    <div class="col-md-2 col-4">
+                        <img src="./images/prdct_list_img6.jpg" class=" myorderimg " alt="Necklace">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-md-6 col-8">
+                        <h6 class="mb-1">Product name</h6>
+                        <span>Material: Alloy| Qty: 1</span>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="col-md-2 text-md-end col-6">
+                        <p class="fw-bold mb-0">₹2,999</p>
+                    </div>
+
+
+                    <div class="col-md-2 text-md-end col-6">
+                        <button class="btn btn-sm btn-prdct">View Details</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <!-- second order end -->
+
+        <!-- third order starts -->
+        <div class="card mb-4  rounded mb-5">
+            <div class="card-body semi-transparent rounded">
+                <!-- Order Header -->
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div>
+                        <h5 class="mb-1">Order #12345</h5>
+                        <span>Placed on: 12 Aug 2025</span>
+                    </div>
+                    <span class="badge bg-danger px-3 py-2">Cancelled</span>
+                </div>
+
+                <!-- Order Items -->
+                <div class="row g-3 align-items-center border-top pt-3">
+
+                    <!-- Product Image -->
+                    <div class="col-md-2 col-4">
+                        <img src="./images/prdct_list_img3.jpg" class=" myorderimg" alt="...">
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="col-md-6 col-8">
+                        <h6 class="mb-1">Product name</h6>
+                        <span>Material: Alloy| Qty: 1</span>
+                    </div>
+
+                    <!-- Price -->
+                    <div class="col-md-2 text-md-end col-6">
+                        <p class="fw-bold mb-0">₹2,999</p>
+                    </div>
+
+                    <div class="col-md-2 text-md-end col-6">
+                        <button class="btn btn-sm btn-prdct">View Details</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!-- third order ends -->
+
+
+
+    </div>
+
+    <!-- orders card end -->
+
+    <!-- footer start -->
+    <!-- <div>
+        <div class="container-fluid light-blue p-5 text-center mt-5">
+            <h6 class="fw-bold navy-txt text-center">Contact</h6>
+
+            <p class="navy-txt mb-1">
+                Email: <a href="mailto:info@example.com" class="navy-txt text-decoration-none">contactzyra@gmail.com</a>
+            </p>
+            <p class="navy-txt mb-1">Phone: +91 98765 43210</p>
+
+            <p class="navy-txt mb-0">Copyright &copy; Your Website 2025</p>
+        </div>
+    </div> -->
+    <!-- footer end -->
+
+
+
+</body>
+
+</html>
